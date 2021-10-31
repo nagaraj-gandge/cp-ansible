@@ -51,5 +51,8 @@
 - import_playbook: control_center.yml
 
 - name: Kafka Control Center URL
-  debug:
-    msg: "Kafka Control Center URL is http://10.3.37.253:9021"
+  hosts: localhost
+  task:
+  - name: Kafka Control Center URL
+    debug:
+      msg: "Kafka Control Center URL is http://10.3.37.253:9021"
