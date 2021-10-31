@@ -52,7 +52,7 @@
 
 - name: Kafka Control Center URL
   hosts: localhost
-  task:
+  tasks:
   - name: Kafka Control Center URL
     debug:
       msg: "Kafka Control Center URL is http://10.3.37.253:9021"
